@@ -12,14 +12,15 @@
 */
 
 
-Route::get('/redirect','FacebookInt@redirect');
+/*Route::get('/redirect','FacebookInt@redirect');
 Route::get('/','FacebookInt@login');
 Route::get('public/callback','FacebookInt@callback');
 Route::get('/posts','PostsController@showPostForm');
 Route::post('/insertPost','PostsController@store');
 Route::get('/like','PostsController@like');
 Route::get('/contacts','contacts@getContacts');
-Route::post('/contacts','contacts@store');
+Route::post('/contacts','contacts@store');*/
+Route::get('/', 'contacts@getAddressBook');
 Route::get('/addressBook','contacts@getAddressBook');
 /*Route::get('contact',
   ['as' => 'contact', 'uses' => 'AboutController@create']);
